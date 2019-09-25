@@ -3,7 +3,7 @@ from typing import Iterable
 from openpyxl import Workbook, load_workbook
 import pickle
 
-
+# A class to hold the waveform data.
 class WaveformData:
     def __init__(self):
         self.f = None
@@ -149,9 +149,3 @@ class WaveformDataList:
         my_file = open(filename, 'rb')
         self.wfs = pickle.load(my_file)
 
-# wd = WaveformData()
-# #wd.set_data(10, array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]), array([[1,2,3,4,5,6,7,8,9,0], [10,11,12,13,14,15,16,17,18,19]]), 330, 0)
-# #wd.save_data("testfile")
-# wd.load_data("testfile")
-# print(wd.t)
-# print(wd.v)
