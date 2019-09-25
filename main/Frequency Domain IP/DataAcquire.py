@@ -1,8 +1,10 @@
-from model.hardware.mso5104.pyMSO5104 import pyMSO5104
+# Standard python imports
 import os
 from time import sleep
 from numpy import array, random
 
+# Custom imports from model library
+from model.hardware.mso5104.pyMSO5104 import pyMSO5104
 from model.data.WaveformDataList import WaveformData
 from model.inversion.CosFit import CosFit
 from model.Logger import Logger
