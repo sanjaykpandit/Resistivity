@@ -1,7 +1,7 @@
 from numpy import ndarray, zeros, array, exp, real, imag
 from openpyxl import Workbook, load_workbook
 from typing import Iterable, List
-
+# A class to address the inverted cosine waveform parameters.
 class FitData:
     def __init__(self, n_param: int):
         self.n_param = n_param
