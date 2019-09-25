@@ -2,6 +2,7 @@ from numpy import ndarray, zeros, array, exp, real, imag
 from openpyxl import Workbook, load_workbook
 from typing import Iterable
 
+# A class to hold the time domain ip data.
 class TDIPData:
     def __init__(self, mr):
         self.t = []
